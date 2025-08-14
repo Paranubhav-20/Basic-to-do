@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Task Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen py-8 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-10">
+            <h1 class="text-3xl font-bold text-gray-800 mb-2">Elegant Task Manager</h1>
+            <p class="text-gray-600">Organize your daily tasks with style</p>
+        </div>
+
+        <!-- Task Input Section -->
+        <div class="bg-white rounded-xl p-6 mb-8 task-card">
+            <div class="task-input-container flex items-center gap-4 w-full">
+                <input 
+                    type="text" 
+                    id="taskInput" 
+                    placeholder="Enter a new task..." 
+                    class="task-input flex-grow py-3 px-4 border border-gray-300 rounded-lg input-field focus:border-indigo-500 transition duration-200"
+                >
+                <button 
+                    id="addTaskBtn" 
+                    class="btn-primary text-white py-3 px-6 rounded-lg font-medium"
+                >
+                    <i class="fas fa-plus mr-2"></i>Add Task
+                </button>
+            </div>
+        </div>
+
+        <!-- Tasks Container -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <!-- Pending Tasks Section -->
+            <div class="bg-white rounded-xl p-6 task-card">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-xl font-semibold text-gray-800">Pending Tasks</h2>
+                    <span id="pendingCount" class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">0 tasks</span>
+                </div>
+                <div id="pendingTasks" class="space-y-3"></div>
+            </div>
+
+            <!-- Completed Tasks Section -->
+            <div class="bg-white rounded-xl p-6 task-card">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-xl font-semibold text-gray-800">Completed Tasks</h2>
+                    <span id="completedCount" class="bg-emerald-100 text-emerald-800 text-xs font-medium px-2.5 py-0.5 rounded-full">0 tasks</span>
+                </div>
+                <div id="completedTasks" class="space-y-3"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-12 text-center text-gray-500 text-sm">
+        <div class="max-w-4xl mx-auto border-t border-gray-200 pt-6">
+            <p>&copy; 2023 Elegant Task Manager. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
