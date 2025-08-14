@@ -17,8 +17,9 @@ Tasks are saved in **localStorage**, so they persist across browser sessions.
 
 ## 🖼️ Preview
 
-![Elegant Task Manager Screenshot](screenshot.png)  
-*(Replace `screenshot.png` with your actual screenshot file.)*
+<img width="1898" height="928" alt="Screenshot 2025-08-15 021831" src="https://github.com/user-attachments/assets/a8d68476-7f54-4499-abf0-6829cd25ba73" />
+
+
 
 ## 📂 Project Structure
 
@@ -51,10 +52,10 @@ That's it! No build tools or dependencies required.
 ## 📸 Screenshots
 
 ### Pending & Completed Tasks View
-![Tasks View](tasks-view.png)
+<img width="1919" height="927" alt="Screenshot 2025-08-15 021339" src="https://github.com/user-attachments/assets/5710ed9c-d5c4-4208-be41-47a8d3f79221" />
 
 ### Mobile View
-![Mobile View](mobile-view.png)
+![mob](https://github.com/user-attachments/assets/d7cb2fbf-8668-4130-bb09-fe9be0720a45)
 
 ## 📜 License
 
